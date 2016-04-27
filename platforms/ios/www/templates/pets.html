@@ -1,0 +1,21 @@
+<ion-view class="pets-content">
+    <ion-content>
+        <div class="row" ng-repeat="arrayPet in dC.pets | limitTo:30">
+            <div class="col-50 col-pet" ng-repeat="pet in arrayPet">
+                <div class="pet-photo-wrap" data-link="f">
+                    <div class="pet-photo">
+                        <img src="{{pet.large_results_photo_url}}">
+                        <p class="pet-title">{{pet.pet_name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+<!--<div class="list card">-->
+    <!--<a class="item item-image item-pet" ng-repeat="pet in dC.pets">-->
+        <!--{{$index}}-->
+        <!--<img src="{{pet.results_photo_url}}" alt="pet.pet_name" title="pet.pet_name">-->
+        <!--{{pet.pet_name}}-->
+    <!--</a>-->
+<!--</div>-->
